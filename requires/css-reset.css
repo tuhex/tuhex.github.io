@@ -1,0 +1,15 @@
+html, body, h1, h2, h3, h4, h5, h6, a, img, link, blockquote, strong, sub, sup, a, abbr, iframe,
+
+header, nav, div, section, article, aside, footer, canvas, form, fieldset, label, ul, ol, dt, dl, li  {
+    
+}
+
+a {
+    color: azure;
+    text-decoration: none;
+}
+
+ol, ul, dl {
+    list-style: none;
+}
+

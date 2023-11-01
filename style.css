@@ -1,0 +1,57 @@
+* {
+    background: #494d5f;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+header {
+    color: white;
+    display: inline-flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom:0.1mm solid whitesmoke;
+}
+
+.navbar {
+    font-style: normal;
+    display: inline-flex;
+    flex: wrap;
+    width: auto;
+}
+
+.creator {
+    color: azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 100px;
+}
+
+.makeCirc {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.makeCirc::after {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    border-radius: 40%;
+}
+
+.creator li {
+    margin-top: 15px;
+}
+
+.creator li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.creator li::after {
+    z-index: -1;;
+}
+
+.creator span {
+    margin-left: 12px;
+}
