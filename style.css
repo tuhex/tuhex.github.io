@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
+
 * {
     background: #494d5f;
     overflow: hidden;
@@ -7,28 +9,52 @@
 
 header {
     margin-top: 6px;
-    color: white;
     width: 100%;
     font-size: 17px;
     display: inline-flex;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
     border-bottom: 0.3mm dashed gray;
 }
 
 .navbar {
     font-style: normal;
     display: inline-flex;
-    flex: wrap;
     width: auto;
-    margin-bottom: 10px;
+    margin-left: 300px;
 }
 
-.creator {
+.label strong {
     color: azure;
+}
+
+.label strong:hover {
+    color: gray;
+}
+
+.navbar ul li {
+    margin: -13px 40px 0 0;
+    width: auto;
+    display: inline;
+    float: left;
+    font-size: 15px;
+}
+
+
+ul li:hover {
+    text-decoration: underline;
+    text-decoration: color(255, 255, 255, 1);
+}
+
+ul a {
+    color: azure;
+}
+
+
+.creator {
+    font-family: "Open Sans", sans-serif;
     display: inline-block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 300px;
-    border-right: 0.3mm dashed gray;
+    position: static;
 }
 
 .makeCirc {
@@ -38,14 +64,18 @@ header {
 }
 
 .creator h3 {
-    margin-left: 25px;
+    margin-left: 27px;
+
 }
 
 .creator ul {
-    margin: 25px 0 0 -40px;
+    margin: 30px 0 0 -40px;
 }
 
 .creator li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
     margin-top: 15px;
     font-size: 15px;
 }
@@ -55,17 +85,18 @@ header {
     cursor: pointer;
 }
 
-.creator span::before {
-    z-index: -1;
-    top: 8px;
-    right: 0;
-    
-}
-
 img{
-    margin-top: 33px;
+    margin-top: 50px;
 }
 
 .creator span {
     margin-left: 12px;
+}
+
+i {
+    font-size: 0.9rem;
+  }
+
+article {
+    border-left: 0.3mm dashed gray;
 }

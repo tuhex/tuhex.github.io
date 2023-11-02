@@ -5,9 +5,9 @@ header, nav, div, section, article, aside, footer, canvas, form, fieldset, label
 }
 
 a {
-    color: azure;
     text-decoration: none;
 }
+
 
 ol, ul, dl {
     list-style: none;
