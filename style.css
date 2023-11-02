@@ -11,50 +11,63 @@ header {
     margin-top: 6px;
     width: 100%;
     font-size: 17px;
-    display: inline-flex;
     font-family: "Open Sans", sans-serif;
-    border-bottom: 0.3mm dashed gray;
+    border-bottom: 0.3mm solid gray;
 }
 
 .navbar {
     font-style: normal;
-    display: inline-flex;
-    width: auto;
     margin-left: 300px;
+    overflow: hidden;
 }
 
-.label strong {
+.navbar a {
+    float: left;
+}
+
+.navbar-right {
+    display: inline-flex;
+    float: right;
+    margin-right: 375px;
+}
+
+.navbar-right span {
     color: azure;
 }
 
-.label strong:hover {
+.navbar-right span:hover{
+    text-decoration: 1px solid underline;
+}
+
+.navbar strong:hover {
     color: gray;
 }
 
-.navbar ul li {
-    margin: -13px 40px 0 0;
-    width: auto;
-    display: inline;
-    float: left;
-    font-size: 15px;
-}
-
-
 ul li:hover {
     text-decoration: underline;
-    text-decoration: color(255, 255, 255, 1);
 }
-
-ul a {
-    color: azure;
-}
-
 
 .creator {
     font-family: "Open Sans", sans-serif;
     display: inline-block;
-    margin-left: 300px;
-    position: static;
+    margin: 0 20px 0 300px;
+    position: sticky;
+}
+
+.creator i{
+    color: azure;
+}
+
+.creator ul a {
+    color: #a7bcb9;
+}
+
+.creator a:hover {
+    text-decoration: azure;
+}
+
+#creator-list :hover {
+    color: #a7bcb9;
 }
 
 .makeCirc {
@@ -64,29 +77,29 @@ ul a {
 }
 
 .creator h3 {
-    margin-left: 27px;
-
+    margin-left: 32px; 
 }
 
 .creator ul {
-    margin: 30px 0 0 -40px;
+    margin: 30px 0 0 -30px;
 }
 
 .creator li {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 15px;
 }
 
-.creator li:hover {
+.creator a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
 img{
     margin-top: 50px;
+    margin-left: 8px;
 }
 
 .creator span {
@@ -95,8 +108,62 @@ img{
 
 i {
     font-size: 0.9rem;
-  }
+    display: inline;
+}
 
-article {
+section {
+    display:inline-block;
+    float: right;
     border-left: 0.3mm dashed gray;
+    height: 100%;
+    position:absolute;
+}
+
+section h2 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: azure;
+    margin-top: 50px;
+    border-bottom: 0.3mm solid gray;
+    margin-left: 450px;
+    text-align: center;
+    width: 100%;
+}
+
+.topic {
+    font-family: monospace;
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.topic-header a{
+    font-size: 20px;
+    color: aquamarine;
+    text-decoration: 2px solid underline;
+}
+
+.topic-header a:hover {
+    color: aqua;
+    text-decoration-color: aqua;
+}
+
+.read-time::before {
+    content: '•';
+    color: #111;
+}
+
+.date div span::after {
+    margin-left: 5px;
+}
+
+footer {
+    width: 100vw;
+    height: auto;
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #3e4a61;
+    color: #fff;
+    padding-top: 50px;
 }
