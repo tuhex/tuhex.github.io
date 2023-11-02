@@ -6,10 +6,13 @@
 }
 
 header {
+    margin-top: 6px;
     color: white;
+    width: 100%;
+    font-size: 17px;
     display: inline-flex;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border-bottom:0.1mm solid whitesmoke;
+    border-bottom: 0.3mm dashed gray;
 }
 
 .navbar {
@@ -17,12 +20,15 @@ header {
     display: inline-flex;
     flex: wrap;
     width: auto;
+    margin-bottom: 10px;
 }
 
 .creator {
     color: azure;
+    display: inline-block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 100px;
+    margin-left: 300px;
+    border-right: 0.3mm dashed gray;
 }
 
 .makeCirc {
@@ -31,16 +37,17 @@ header {
     border-radius: 50%;
 }
 
-.makeCirc::after {
-    position: relative;
-    height: 200px;
-    width: 200px;
-    border-style: solid;
-    border-radius: 40%;
+.creator h3 {
+    margin-left: 25px;
+}
+
+.creator ul {
+    margin: 25px 0 0 -40px;
 }
 
 .creator li {
     margin-top: 15px;
+    font-size: 15px;
 }
 
 .creator li:hover {
@@ -48,8 +55,15 @@ header {
     cursor: pointer;
 }
 
-.creator li::after {
-    z-index: -1;;
+.creator span::before {
+    z-index: -1;
+    top: 8px;
+    right: 0;
+    
+}
+
+img{
+    margin-top: 33px;
 }
 
 .creator span {
