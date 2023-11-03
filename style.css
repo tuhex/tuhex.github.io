@@ -128,7 +128,9 @@ article {
     border: 0.5mm dotted azure;
     border-radius: 5px;
     padding: 10px;
-    margin-top: 20px;
+}
+
+article::after:first-of-type {
 }
 
 section h2 {
@@ -138,37 +140,47 @@ section h2 {
     text-align: center;
 }
 
-
-
 .topic-header a{
     font-size: 20px;
     color: aquamarine;
     text-decoration: 2px solid underline;
+    text-align: center;
 }
 
 .topic-header a:hover {
     color: aqua;
     text-decoration-color: aqua;
+    text-indent: 0.1rem;
 }
 
 .predesc{
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     color: azure;
-    margin-top: -15px;
-    text-indent: 10px;
+    margin-top: -20px;
 }
 
 .post-information {
     color: gray;
-    display: inline-flex;
-    float: left;
+    display: flex;
 }
 
 .post-information span {
     margin-left: 8px;
 }
 
+.date {
+    width: 78%;
+    text-align: right;
+}
+
+.date span {
+    font-size: 15px;
+}
+
+.read-time span {
+    font-size: 15px
+}
 
 .date div span::after {
     margin-left: 5px;
