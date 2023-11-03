@@ -6,14 +6,12 @@
 }
 
 header {
-    margin-top: 6px;
-    font-size: 17px;
-    font-family: "Open Sans", sans-serif;
     border-bottom: 0.3mm solid gray;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
 }
 
 .navbar {
-    font-style: normal;
     overflow: hidden;
 }
 
@@ -26,7 +24,7 @@ header {
 .navbar-right {
     display: inline-flex;
     float: right;
-    text-align: center;
+    text-align: right;
     width: 25%;
 }
 
@@ -48,16 +46,27 @@ ul li:hover {
 
 .creator {
     font-family: "Open Sans", sans-serif;
-    width: auto;
-    align-items: center;
-    display: inline-block;
-    position: fixed;
     width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
 }
 
 .user {
     width: 100%;
     margin-top: 40px;
+}
+
+.user img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.makeCirc {
+    display: block;
+    margin: 0 auto;
 }
 
 .user h3 {
@@ -66,13 +75,16 @@ ul li:hover {
 
 .creator i{
     color: #a7bcb9;
+    font-size: 17px;
 }
 
 .creator ul {
-    width: 66%;
     text-align: left;
-    margin-left: 35%;
-    margin-right: auto;
+}
+
+
+.creator li {
+    margin-top: 12px;
 }
 
 .creator ul a {
@@ -85,17 +97,6 @@ ul li:hover {
 
 #creator-list :hover {
     color: #a7bcb9;
-}
-
-.makeCirc {
-    overflow: hidden;
-    border-radius: 50%;
-    margin-right: auto;
-    margin-left: 41%;
-}
-
-.creator li {
-    margin-top: 12px;
 }
 
 
@@ -130,8 +131,6 @@ article {
     padding: 10px;
 }
 
-article::after:first-of-type {
-}
 
 section h2 {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
