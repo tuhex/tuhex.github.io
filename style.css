@@ -8,9 +8,14 @@
 header {
     border-bottom: 0.3mm solid gray;
     font-family: "Open Sans", sans-serif;
-    font-size: 17px;
+    font-size: 22px;
 }
 
+a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
 .navbar {
     overflow: hidden;
 }
@@ -19,6 +24,10 @@ header {
     float: left;
     text-align: center;
     width: 30%;
+}
+
+.navbar strong:hover {
+    color: gray;
 }
 
 .navbar-right {
@@ -32,12 +41,40 @@ header {
     color: azure;
 }
 
-.navbar-right span:hover {
-    text-decoration: 1px solid underline;
+#creator-list div a i::after,
+#creator-list a span::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #7CB9E8;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
 }
 
-.navbar strong:hover {
-    color: gray;
+.navbar-right span::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #7CB9E8;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.navbar-right span:hover::after,
+#creator-list a span:hover::after,
+#creator-list div a:hover::after{
+    transform: scaleX(1);
+}
+
+#creator-list div a:hover {
+    text-indent: 5px;
 }
 
 ul li:hover {
@@ -56,59 +93,53 @@ ul li:hover {
     margin-top: 40px;
 }
 
-.main-image {
-    width: 100%;
-    height: 100%;
-}
-
 .makeCirc {
-    margin: auto;
-    height: 100px;
-    width: 100px;
+    margin: 0 auto;
+    display: block;
+    height: 105px;
+    width: 105px;
     border-radius: 50%;
-    position: absolute;
+    position: relative;
+    top: 0.5rem;
 }
 
 .out-circ {
     margin: 0 auto;
-    height: 112px;
-    width: 112px;
+    height: 120px;
+    width: 120px;
     border-radius: 50%;
-    border-color: rgb(255, 255, 255);
-    border-style: dashed;
+    border-color: #4E6E81;
+    border-style: double;
     border-width: 1px;
 
 }
 
+.out-circ:hover {
+    border-style: dashed;
+}
+
 .user h3 {
+    font-size: 24px;
     text-align: center;
 }
 
 .creator i {
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .creator div {
-    margin-top: 10px;
+    margin-top: 14px;
 }
-
-
 
 #creator-list span {
     position: relative;
     top: -2px;
     color: #a7bcb9;
-    font-size: 13px;
+    font-size: 17px;
 }
 
 #creator-list i {
     color: #a7bcb9;
-}
-
-#creator-list div a:hover {
-    text-decoration: 1px solid underline;
-    text-decoration-color: azure;
-    text-indent: 1px;
 }
 
 i {
@@ -143,7 +174,7 @@ section h2 {
 }
 
 .topic-header a {
-    font-size: 22px;
+    font-size: 25px;
     margin-top: -200px;
     color: aquamarine;
     text-decoration: 2px solid underline;
@@ -158,7 +189,7 @@ section h2 {
 
 .predesc {
     font-family: "Open Sans", sans-serif;
-    font-size: 17px;
+    font-size: 20px;
     color: azure;
     margin-top: -20px;
 }
@@ -171,7 +202,7 @@ section h2 {
 .post-information span {
     overflow: hidden;
     margin-left: 8px;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .date {
@@ -188,7 +219,7 @@ section h2 {
 }
 
 .read-time i {
-    font-size: 15px;
+    font-size: 18px;
     position: relative;
     top: -9px;
 }
