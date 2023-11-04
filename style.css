@@ -63,6 +63,9 @@ ul li:hover {
 }
 
 .read-time img {
+    overflow: visible;
+    position: relative;
+    top: -2px; 
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -162,8 +165,9 @@ section h2 {
 }
 
 .post-information span {
+    overflow: hidden;
     margin-left: 8px;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .date {
@@ -172,8 +176,22 @@ section h2 {
 }
 
 .read-time {
+    position: relative;
+    top: -4px;
+    line-height: 1.5rem;
     width: 50%;
     text-align: left;
+}
+
+.read-time i{
+    font-size: 15px;
+    position: relative;
+    top: -8px;
+}
+
+.read-time span {
+    position: relative;
+    top: -10px;
 }
 
 .date div span::after {
