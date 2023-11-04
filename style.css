@@ -5,6 +5,10 @@
     overflow: auto;
 }
 
+
+
+
+
 header {
     border-bottom: 0.3mm solid gray;
     font-family: "Open Sans", sans-serif;
@@ -41,8 +45,11 @@ a {
     color: azure;
 }
 
-#creator-list div a i::after,
-#creator-list a span::after {
+
+
+
+
+#creator-list a::after {
     content: "";
     position: absolute;
     display: inline-block;
@@ -68,8 +75,7 @@ a {
 }
 
 .navbar-right span:hover::after,
-#creator-list a span:hover::after,
-#creator-list div a:hover::after{
+#creator-list a:hover::after{
     transform: scaleX(1);
 }
 
@@ -80,6 +86,9 @@ a {
 ul li:hover {
     text-decoration: underline;
 }
+
+
+
 
 .creator {
     font-family: "Open Sans", sans-serif;
@@ -123,6 +132,7 @@ ul li:hover {
     text-align: center;
 }
 
+
 .creator i {
     font-size: 17px;
 }
@@ -130,6 +140,7 @@ ul li:hover {
 .creator div {
     margin-top: 14px;
 }
+
 
 #creator-list span {
     position: relative;
@@ -142,9 +153,9 @@ ul li:hover {
     color: #a7bcb9;
 }
 
-i {
-    position: relative;
-}
+
+
+
 
 section {
     width: 50%;
@@ -241,6 +252,9 @@ section h2 {
 .date div span::after {
     margin-left: 5px;
 }
+
+
+
 
 footer {
     width: 100vw;
