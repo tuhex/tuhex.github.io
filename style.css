@@ -108,8 +108,8 @@ ul li:hover {
 .makeCirc {
     margin: 0 auto;
     display: block;
-    height: 100px;
-    width: 100px;
+    height: 95px;
+    width: 95px;
     border-radius: 50%;
     position: relative;
     top: 0.5rem;
@@ -117,8 +117,8 @@ ul li:hover {
 
 .out-circ {
     margin: 0 auto;
-    height: 115px;
-    width: 115px;
+    height: 110px;
+    width: 110px;
     border-radius: 50%;
     border-color: #4E6E81;
     border-style: double;
@@ -131,13 +131,13 @@ ul li:hover {
 }
 
 .user h3 {
-    font-size: 24px;
+    font-size: 23px;
     text-align: center;
 }
 
 
 .creator i {
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .creator div {
@@ -149,7 +149,7 @@ ul li:hover {
     position: relative;
     top: -2px;
     color: #a7bcb9;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 #creator-list i {
