@@ -101,8 +101,8 @@ a {
 .makeCirc {
     margin: 0 auto;
     display: block;
-    height: 105px;
-    width: 105px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     position: relative;
     top: 0.5rem;
@@ -110,8 +110,8 @@ a {
 
 .out-circ {
     margin: 0 auto;
-    height: 120px;
-    width: 120px;
+    height: 115px;
+    width: 115px;
     border-radius: 50%;
     border-color: #4E6E81;
     border-style: double;
@@ -130,7 +130,7 @@ a {
 
 
 .creator i {
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .creator div {
@@ -142,7 +142,7 @@ a {
     position: relative;
     top: -2px;
     color: #a7bcb9;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 #creator-list i {
@@ -259,5 +259,4 @@ footer {
     background: #4E6E81;
     color: #fff;
     padding-top: 35px;
-    overflow: visible;
 }
