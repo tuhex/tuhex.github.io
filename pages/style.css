@@ -210,7 +210,7 @@ article {
     text-align: center;
 }
 
-.summary,
+.sumconc,
 .content {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
@@ -218,7 +218,7 @@ article {
     color: bisque;
 }
 
-.summary p {
+.sumconc p {
     font-size: 18px;
     text-indent: 35px;
     line-height: 1.5;
@@ -241,6 +241,11 @@ article {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+}
+
+.content p span {
+    color: #232d3f;
+    margin-left: 10px;
 }
 
 
