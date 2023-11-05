@@ -41,7 +41,7 @@ a {
     display: inline-flex;
     float: right;
     text-align: right;
-    width: 30%;
+    width: 25%;
 }
 
 .navbar-right h3 {
@@ -67,8 +67,9 @@ a {
 
 .navbar-right span::after {
     content: "";
+
     display: block;
-    width: 100%;
+    width: auto;
     height: 1.5px;
     bottom: 0;
     left: 0;
@@ -115,11 +116,13 @@ ul li:hover {
     top: 0.5rem;
 }
 
+
 .out-circ {
     margin: 0 auto;
     height: 110px;
     width: 110px;
     border-radius: 50%;
+    
     border-color: #4E6E81;
     border-style: double;
     border-width: 1px;
@@ -198,7 +201,7 @@ section h2 {
 .topic-header a:hover {
     color: aqua;
     text-decoration-color: aqua;
-    text-indent: 0.1rem;
+    text-indent: 0.3rem;
 }
 
 .predesc {
