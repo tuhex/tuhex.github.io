@@ -28,6 +28,7 @@
             </div>
         </nav>
     </header>
+    <hr style="width: 100%; height: 0.1px; max-width: 100%; padding-left: 0px; padding-right: 0px;"/>
 
     
     <article>
@@ -54,19 +55,24 @@
         <div class="content">
             <h3>.exe Dosyaları</h3>
             <p>
-                <strong>.exe</strong> uzantılı dosyalar Windows ve DOS sistemlerde <strong>'executable file(çalıştırılabilir dosya)'</strong> olarak geçer. İçerisinde dosyanın .exe olmasını sağlayan, dosya ile ilgili özellikleri tutan, dosya verilerini tutan kısımlar bulunur. Windows sistemlerde bu yapıya PE/PE32, DOS sistemlerde MZ(ayrıca dos-header kodlarında imza harfleridir) denir. Bu yapıların arasında farklar vardır. Fakat halihazırda MZ dosya kodlarının PE içerisine gömülü olduğunu söyleyelim. Yani PE kodları içerisinde MZ kodlarını barındırır.
+                <strong>.exe</strong> uzantılı dosyalar Windows ve DOS sistemlerde <strong>'executable file(çalıştırılabilir dosya)'</strong> olarak geçer. İçerisinde dosyanın .exe olmasını sağlayan, dosya ile ilgili özellikleri tutan, dosya verilerini tutan kısımlar bulunur. Windows sistemlerde bu yapıya sürüm farklılıklarıyla PE/PE32, DOS sistemlerde MZ denir.
             </p>
+            <hr>
+            <h3>PE Dosyaları</h3>
             <p>
+                <strong>PE(Portable Executable)</strong> dosya formatındaki alanlar o dosyanın kritik bilgilerini içerir. Bu format <i>".acm, .ax, .cpl, .drv, .efi, .mui, .ocx, .scr, .sys, .tsp, .dll, .exe"</i> gibi dosyaları kapsar. Kritik bilgilerden bahsettik, bu kritik bilgiler Reverse Engineering ve Malware Software ile ilgilene kişilerin ilgisini çekecek türden. Peki neden böyle bir dosyaya ihtiyacımız var? Aslında bu yapı Windows'un executable dosyayı hafızaya alıp çalıştırabilmesini sağlıyor. Executable dosyaların çalışması için PE/PE32 veya DOS sistemler için MZ-DOS kullanılabilir. Aradaki fark uyumluluk ve sürümdür. Fakat halihazırda PE içeriğinde MZ kodlarının bulunduğunu belirteyim.
+              
                 Şimdi PE yapısını inceleyelim.
                 <br />
             </p>
             <img class="center" src="/gallery/pe-format.png" alt="form of pe structure"  height="100%">
             <p>
-                PE başlığı 64-bit uzunluğunda olan DOS-header ve DOS-stub dan oluşuyor. Her .EXE dosyası PE başlığı içerir ve DOS-header ile başlar. Bu .EXE dosyasının kimliğidir. Konumuz DOS-header olduğu için alt kısımlara fazla değinmeyeceğim.
+                DOS-Header ve DOS-Stub PE başlığı adı verilen bir yapıyı oluşturuyor. PE başlığı 64-bit uzunluğundadır. Her PE yapısı PE başlığı içerir ve DOS-header ile başlar. Bu PE dosyasının kimliğidir. Konumuz DOS-header olduğu için alt kısımlara fazla değinmeyeceğim.
             </p>
             <hr>
             <h3>DOS-header</h3>
             <p>
+                DOS-Header'ın 64-byte uzunluğunda olduğundan bahsetmiştim.
                 DOS-header'ın içerisindeki kodlar WORD(2-byte) ve LONG(4-byte) verilerinden oluşuyor. Bu özelliklerin her birisinin ismine <strong>Field</strong> diyebiliriz. Offset değerleri ise 0x00 ile başlıyor. 0x00 offset değerinin field ismi <i>Signature</i>. '5A' ve '4D' değeri ASCII'de 'M' ve 'Z' değerleridir. MZ, Mark Zbikowski isminden gelir.    
                 <br />
             </p>
