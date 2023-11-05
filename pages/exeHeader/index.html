@@ -60,7 +60,7 @@
                 Şimdi PE yapısını inceleyelim.
                 <br />
             </p>
-            <img class="center" src="/gallery/pe-format.png" alt="form of pe structure"  height="500px">
+            <img class="center" src="/gallery/pe-format.png" alt="form of pe structure"  height="100%">
             <p>
                 PE başlığı 64-bit uzunluğunda olan DOS-header ve DOS-stub dan oluşuyor. Her .EXE dosyası PE başlığı içerir ve DOS-header ile başlar. Bu .EXE dosyasının kimliğidir. Konumuz DOS-header olduğu için alt kısımlara fazla değinmeyeceğim.
             </p>
@@ -70,13 +70,13 @@
                 DOS-header'ın içerisindeki kodlar WORD(2-byte) ve LONG(4-byte) verilerinden oluşuyor. Bu özelliklerin her birisinin ismine <strong>Field</strong> diyebiliriz. Offset değerleri ise 0x00 ile başlıyor. 0x00 offset değerinin field ismi <i>Signature</i>. '5A' ve '4D' değeri ASCII'de 'M' ve 'Z' değerleridir. MZ, Mark Zbikowski isminden gelir.    
                 <br />
             </p>
-            <img class="center"    src="/gallery/dos-header-section.png" alt="dos-header and dos-stub" height="400px" width="35%">
+            <img class="center"    src="/gallery/dos-header-section.png" alt="dos-header and dos-stub" height="auto" width="60%" >
 
             <p>
                 0x00 offset değerinden başlayıp 0x40 offset değerine kadar gider. Arada ise DOS-header değerleri bulunur. PE başlık başlangıcına kadar Rich Header vs DOS-stub dediğimiz kısımlar bulunur. Aynı zamanda 0x3C offset değerinin karşılığı <strong>Decoded Text</strong> bölümünde <i>PE</i> karşılık geliyor. Bu dosyanın PE yapısına sahip olduğunu ve x86 ve x64 bit Windows sistemler için uygun olduğunu gösteriyor.
             </p>
-            <img class="center"  src="/gallery/details.png" height="auto" width="35%">
-            <img class="center"  src="/gallery/fields.png" height="auto" width="35%">
+            <img class="center"  src="/gallery/details.png" height="auto" width="60%">
+            <img class="center"  src="/gallery/fields.png" height="auto" width="60%">
 
             
 

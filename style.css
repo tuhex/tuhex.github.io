@@ -40,7 +40,7 @@ a {
 .navbar-right {
     float: right;
     text-align: right;
-    width: 25%;
+    width: 35%;
 }
 
 .navbar-right h3 {
@@ -121,6 +121,7 @@ ul li:hover {
     height: 110px;
     width: 110px;
     border-radius: 200px;
+
     border-color: #4E6E81;
     border-style: double;
     border-width: 1px;

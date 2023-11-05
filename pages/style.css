@@ -35,10 +35,10 @@ a {
 }
 
 .navbar-right {
-    display: inline-flex;
+
     float: right;
     text-align: right;
-    width: 25%;
+    width: 35%;
 }
 
 .navbar strong:hover {
@@ -176,15 +176,14 @@ article {
 
 .center
 {
+    object-fit: contain;
     display: block;
-
 }
 
 
 .content img {
-  
-    margin-left: auto;
-    margin-right: auto;
+    object-fit: contain;
+    margin: auto;
     margin-top: 20px;
 }
 
