@@ -38,7 +38,6 @@ a {
 }
 
 .navbar-right {
-    display: inline-flex;
     float: right;
     text-align: right;
     width: 25%;
@@ -111,7 +110,7 @@ ul li:hover {
     display: block;
     height: 95px;
     width: 95px;
-    border-radius: 50%;
+    border-radius: 200px;
     position: relative;
     top: 0.5rem;
 }
@@ -121,8 +120,7 @@ ul li:hover {
     margin: 0 auto;
     height: 110px;
     width: 110px;
-    border-radius: 50%;
-    
+    border-radius: 200px;
     border-color: #4E6E81;
     border-style: double;
     border-width: 1px;
@@ -201,7 +199,7 @@ section h2 {
 .topic-header a:hover {
     color: aqua;
     text-decoration-color: aqua;
-    text-indent: 0.3rem;
+    text-indent: 0.1rem;
 }
 
 .predesc {
@@ -228,8 +226,7 @@ section h2 {
 }
 
 .read-time {
-    position: relative;
-    top: -4px;
+    margin-top: 5px;
     line-height: 1.5rem;
     width: 50%;
     text-align: left;
@@ -238,7 +235,7 @@ section h2 {
 .read-time i {
     font-size: 18px;
     position: relative;
-    top: -9px;
+    top: -8px;
 }
 
 .read-time img {
