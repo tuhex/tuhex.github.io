@@ -41,7 +41,7 @@ a {
     display: inline-flex;
     float: right;
     text-align: right;
-    width: 28%;
+    width: 30%;
 }
 
 .navbar-right h3 {
@@ -108,8 +108,8 @@ ul li:hover {
 .makeCirc {
     margin: 0 auto;
     display: block;
-    height: 105px;
-    width: 105px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     position: relative;
     top: 0.5rem;
@@ -117,8 +117,8 @@ ul li:hover {
 
 .out-circ {
     margin: 0 auto;
-    height: 120px;
-    width: 120px;
+    height: 115px;
+    width: 115px;
     border-radius: 50%;
     border-color: #4E6E81;
     border-style: double;
