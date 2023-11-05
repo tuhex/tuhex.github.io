@@ -91,12 +91,10 @@ a {
 
 
 article {
+    text-align: left;
     border: 0.7px dotted #4E6E81;
     overflow: visible;
     display: inline-block;
-    margin-left: 4%;
-    margin-right: auto;
-    width: 90%;
     margin-top: 20px;
     padding: 25px;
     border-radius: 8px;
