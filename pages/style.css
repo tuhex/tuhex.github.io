@@ -227,19 +227,21 @@ article {
 .content {
     color: azure;
     margin-left: 20px;
+
 }
 
 .content p {
     font-size: 18px;
     text-indent: 35px;
+    line-height: 1.5;
 }
 
 .content img {
-    width: auto;
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
 }
-
 
 
 footer {
@@ -251,5 +253,6 @@ footer {
     left: 0;
     background: #4E6E81;
     color: #fff;
-    padding-top: 50px;
+    padding-top: 35px;
+    overflow: visible;
 }
