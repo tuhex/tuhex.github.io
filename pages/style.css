@@ -174,8 +174,15 @@ article {
     line-height: 1.5;
 }
 
+.center
+{
+    display: block;
+
+}
+
+
 .content img {
-    display: inline-block;
+  
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
