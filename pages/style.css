@@ -106,7 +106,8 @@ article {
 }
 
 .breadcrumbs i {
-    font-size: 13px;
+    font-size: 12px;
+
 }
 
 .breadcrumbs li{
@@ -197,6 +198,10 @@ article {
     margin-left: 10px;
 }
 
+section {
+    font-family: "Open Sans", sans-serif;
+}
+
 section ul {
     width: 400px;
 }
@@ -212,6 +217,13 @@ section li {
 section li:first-of-type,
 section li:first-of-type i {
     background-color: #7CB9E8;
+}
+
+section li:first-of-type i {
+    font-size: 13px;
+}
+
+section li:first-of-type {
     font-size: 19px;
 }
 
@@ -223,8 +235,8 @@ section li i {
     color: white;
     background-color: #232d3f;
     margin-left: 8px;
-    z-index: -1;
-    bottom: -4px;
+
+    font-size: 10px;
 }
 
 section a::before {
@@ -267,6 +279,9 @@ section span:hover {
 
 }
 
+section img {
+    display: block;
+}
 
 .out-circ:hover {
     border-style: dashed;
@@ -281,8 +296,6 @@ section span:hover {
     background-color: black;
 }
 
-.fast-navigation a {
- }
 
 .fast-navigation a {
     color: azure;
