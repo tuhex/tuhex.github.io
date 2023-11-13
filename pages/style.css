@@ -212,7 +212,7 @@ section li {
 section li:first-of-type,
 section li:first-of-type i {
     background-color: #7CB9E8;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 section a i {
@@ -223,6 +223,8 @@ section li i {
     color: white;
     background-color: #232d3f;
     margin-left: 8px;
+    z-index: -1;
+    bottom: -4px;
 }
 
 section a::before {
@@ -270,3 +272,18 @@ section span:hover {
     border-style: dashed;
 }
 
+.fast-navigation {
+    text-align: center;
+}
+
+.fast-navigation div{
+    display: inline-flex;
+    background-color: black;
+}
+
+.fast-navigation a {
+ }
+
+.fast-navigation a {
+    color: azure;
+}

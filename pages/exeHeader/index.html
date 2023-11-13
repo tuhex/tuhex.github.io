@@ -49,11 +49,11 @@
             </div>
 
             <ol>
-                <li>Contents<i class="fa-solid fa-link"></i></i></li>
+                <li>Contents<i class="fa-solid fa-list"></i></i></li>
                 <li><a href=""><span>.exe Header Yapısı (Summary)</span></a></li>
-                <li><a href=""><span>.exe Dosyaları (Introduction to exe Files)</span><i class="fa-regular fa-file" style="font-size: 17px; text-align: center;"></i></a></li>
-                <li><a href=""><span>PE Dosyaları (Overlook to the PE Structure)</span></a></li>
-                <li><a href=""><span>DOS Header (Magical part of topic)</span><i class="fa-solid fa-wand-magic-sparkles"></i></a></li>
+                <li><a href="#link2"><span>.exe Dosyaları (Introduction to exe Files)<i class="fa-solid fa-gear"></i></span></a></li>
+                <li><a href="#link3"><span>PE Dosyaları (Overlook to the PE Structure)<i class="fa-solid fa-link"></i></span></a></li>
+                <li><a  href="#link4"><span>DOS Header (Magical part of topic)<i class="fa-solid fa-wand-magic-sparkles"></i></span></a></li>
             </ol>
         </section>
         <div class="topic-header">
@@ -61,14 +61,14 @@
         </div>
 
         <div class="sumconc"><h3>Summary</h3>
-            <p>
+            <p id="link2">
                 .exe dosyalarının içerisindeki yapılara; gömülü kodların aslında ne olduğuna, ne işe yaradıklarına ve neden orada olduklarına bakacağız.
             </p>
             <hr>
         </div>
         <div class="content">
             <h3>.exe Dosyaları</h3>
-            <p>
+            <p id="link3">
                 <strong>.exe</strong> uzantılı dosyalar Windows ve DOS sistemlerde <strong>'executable file(çalıştırılabilir dosya)'</strong> olarak geçer. İçerisinde dosyanın .exe olmasını sağlayan, dosya ile ilgili özellikleri tutan, dosya verilerini tutan kısımlar bulunur. Windows sistemlerde bu yapıya sürüm farklılıklarıyla PE/PE32, DOS sistemlerde MZ denir.
             </p>
             <hr>
@@ -80,7 +80,7 @@
                 <br />
             </p>
             <img class="center" src="/gallery/pe-format.png" alt="form of pe structure"  height="100%">
-            <p>
+            <p id="link4">
                 DOS-Header ve DOS-Stub PE başlığı adı verilen bir yapıyı oluşturuyor. PE başlığı 64-bit uzunluğundadır. Her PE yapısı PE başlığı içerir ve DOS-header ile başlar. Bu PE dosyasının kimliğidir. Konumuz DOS-header olduğu için alt kısımlara fazla değinmeyeceğim.
             </p>
             <hr>
@@ -112,14 +112,23 @@
                <strong>> LONG</strong> <span style="font-size: 17px; color: #a7bcb9;margin-left: 10px;">e_lfanew -> Bu alan değeri <i>0x3C</i> ya da <i>PE</i> olarak ifade edilebilir. PE header dosyasının asıl başlangıç adresinin offset değerini tutar.</span>
             </p>
             <hr>
-            <h3 style="color: bisque;">Özet</h3>
+            <h3 style="color: bisque;">Conclusion</h3>
             <p class="sumconc">
                 PE yapısının içerisinde incelenmesi gereken daha çok yer var. Fakat DOS-header temelinde böyle bir kısım.
             </p>
         </div>
 
+        
     </article>
-
-
+    
+    <div class="fast-navigation">
+        <div>
+            <a href=""><h3>PREV</h3></a>
+        </div>
+        <div>
+            <a href="https://tuhex.github.io/pages/gamedesign/introduction"><h3>NEXT</h3></a>
+        </div>
+    </div>
+    
 </body>
 </html>
