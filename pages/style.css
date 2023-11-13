@@ -197,3 +197,64 @@ article {
     margin-left: 10px;
 }
 
+section ul {
+    width: 400px;
+}
+
+section li {
+    border: 0.1rem solid white;
+    padding: 5px;
+    margin-top: 1px;
+    border-radius: 2px;
+}
+
+section li:first-of-type {
+    color: aquamarine;
+    font-size: 20px;
+}
+
+section li::before {
+    content: '~';
+    color: white;
+    margin-right: 10px;
+}
+
+
+section a {
+    color: white;
+    font-size: 14px;
+}
+
+section a:hover {
+    color: darkgray;
+    text-decoration: underline;
+}
+
+.makeCirc {
+    margin: 0 auto;
+    display: block;
+    height: 95px;
+    width: 95px;
+    border-radius: 200px;
+    position: relative;
+    top: 0.5rem;
+}
+
+
+.out-circ {
+    margin: 0 auto;
+    height: 110px;
+    width: 110px;
+    border-radius: 200px;
+
+    border-color: #4E6E81;
+    border-style: double;
+    border-width: 0.1rem;
+
+}
+
+
+.out-circ:hover {
+    border-style: dashed;
+}
+
