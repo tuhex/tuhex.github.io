@@ -23,6 +23,11 @@ a {
     overflow: hidden;
 }
 
+.navbar div > a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 17px;
+}
+
 .navbar a {
     float: left;
     text-align: center;

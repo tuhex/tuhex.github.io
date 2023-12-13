@@ -1,0 +1,71 @@
+body {
+    color: black;
+    background: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+
+nav {
+    background-color: burlywood;
+    border-bottom: 3px solid black;
+
+}
+
+nav li {
+    
+    list-style-type: none;
+}
+
+nav h3,
+nav ul {
+    display: inline-flex;
+}
+
+nav h3,
+nav ul,
+nav h5 {
+    margin-left: 50px;
+}
+
+span {
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+nav li::after:first-child {
+    margin-left: 20px;
+}
+
+.navigation {}
+
+.sub-navigation {
+
+}
+
+h5 {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+
+section {
+    margin-left: 150px;
+    width: 60%;
+}
+
+aside {
+    float: right;
+}
+
+footer {
+    background-color: brown;
+    bottom: auto;
+    width: 100vh;
+    display: flex;
+    position: relative;
+}
+
+footer h5{
+    margin-left: 20px;
+}
