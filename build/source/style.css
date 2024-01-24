@@ -2,29 +2,41 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #e4e1bd;
-
+  background-color: 232d3f;
+  overflow: auto;
 }
 
-header {
+
+.header {
   text-align: center;
-  font-family: "Roboto Slab", sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}  
+
+
+.changelog {
+  border: 0.5px solid black;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
-.navbar ul > li {
-  display: inline;
-  margin: 30px;
-  font-size: 30px;
-  vertical-align: center;
+.line {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
 }
 
-.navbar ul > li:last-child {
-  font-size: 18px;
+#line_code_1 {
+  grid-column: 1;
+  text-align: center;
+  background-color: #5F819D;
+}
+
+#line_date_1 {
+  grid-column: 3;
+  text-align: center;
+  background-color: #de935f;
 }
 
 
-
-footer {
+.foo {
   position: fixed;
   width: 100%;
   background-color: #333;
@@ -32,13 +44,4 @@ footer {
   color: white;
   text-align: center;
   bottom: 0;
-}
-
-
-.main-content {
-  font-family: "Roboto Slab", sans-serif;
-  border-radius: 5px;
-  margin: 15px;
-
-  font-size: 17px;
 }
