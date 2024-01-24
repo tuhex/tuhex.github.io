@@ -1,40 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Work+Sans&display=swap');
+
 body {
   margin: 0;
   padding: 0;
-  background-color: 232d3f;
+  background-color:  #f3ddbb;
   overflow: auto;
 }
 
 
 .header {
   text-align: center;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }  
 
 
-.changelog {
-  border: 0.5px solid black;
-  font-family: 'Roboto Slab', sans-serif;
+section {
+  font-family: 'Work Sans', sans-serif;
 }
 
-.line {
-  display: grid;
-  grid-template-columns: 20% 60% 20%;
-}
+.colored-line {
 
-#line_code_1 {
-  grid-column: 1;
-  text-align: center;
-  background-color: #5F819D;
+  border-radius: 1px;
+  background-color: #f8eae0;
 }
-
-#line_date_1 {
-  grid-column: 3;
-  text-align: center;
-  background-color: #de935f;
-}
-
 
 .foo {
   position: fixed;
