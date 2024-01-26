@@ -4,7 +4,6 @@
 body {
   margin: 0;
   padding: 0;
-  background-color:  #f3ddbb;
   overflow: auto;
 }
 
@@ -14,15 +13,13 @@ body {
   font-family: 'Work Sans', sans-serif;
 }  
 
-
 section {
+  margin: 10px;
   font-family: 'Work Sans', sans-serif;
 }
 
-.colored-line {
-
-  border-radius: 1px;
-  background-color: #f8eae0;
+.list {
+  list-style-type:square!important;
 }
 
 .foo {
