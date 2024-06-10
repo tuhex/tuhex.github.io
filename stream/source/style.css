@@ -1,40 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 body {
-  margin: 0;
-  padding: 0;
-  overflow: auto;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
 }
 
 header {
-  text-align: center;
-  font-family: 'Work Sans', sans-serif;
-}  
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+}
+
+.hell-bar > li {
+    display: inline;
+    margin-left: 30%;
+}
+
+li {
+    cursor: pointer;
+}
+
+.main-content > a{
+    color: black;
+    text-decoration: underline;
+}
 
 .index {
-    width: 30%;
+    margin: auto;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
-.chosen_index.li {
-    list-style-type: none;
-    text-decoration: none;
-}
-.chosen_index > li:nth-child(odd) {
-    content: 'prev: ';
-}
-.chosen_index > li:nth-child(even) {
-    content: 'ring: ';
+.default-index > li {
+    list-style-type: circle;
+    line-height: 1.4em;
+    border-radius: 3px;
+    width: fit-content;
+    padding: 1px;
 }
 
-.full-picture {
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+.default-index > li:hover {
+    text-decoration: underline;
 }
 
 .foo {
-  position: fixed;
-  width: 100%;
-  background-color: #333;
-  opacity: 0.5;
-  color: white;
-  text-align: center;
-  bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    opacity: 0.5;
+    color: white;
+    text-align: center;
+    bottom: 0;
 }
+
 
