@@ -16,13 +16,34 @@ header {
     margin-left: 30%;
 }
 
+.color-check {
+    background-color: rgb(187, 232, 181, 0.5);
+}
+
 li {
     cursor: pointer;
 }
 
-.main-content > a{
-    color: black;
+.specify-topic {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(67, 87, 71, 1.0);
+    text-decoration: none;
+}
+
+.specify-topic:hover {
     text-decoration: underline;
+}
+
+.main-content > div {
+    margin-left: 15%;
+    margin-right: 5%;
+    margin-top: 40px;
+}
+
+.describe-text {
+    font-style: italic;
+    color: gray;
 }
 
 .index {
