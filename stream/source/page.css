@@ -10,6 +10,7 @@ section {
     font-style: normal;
     margin-left: 10%;
     margin-right: 10%;
+    border: 1px solid black;
 }
 
 .protected {
@@ -29,12 +30,4 @@ section {
     font-size: 13px;
     padding: 2px;
     
-}
-
-.summary {
-    font-family: "Roboto", sans-serif;
-}
-
-p {
-    text-indent: 1em;
 }
