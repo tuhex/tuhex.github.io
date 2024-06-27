@@ -6,11 +6,9 @@ body {
 
 section {
     font-family: "Reddit Mono", monospace;
-    font-size: medium;
-    font-style: normal;
     margin-left: 10%;
     margin-right: 10%;
-    border: 1px solid black;
+    margin-top: 50px;
 }
 
 .protected {
@@ -28,6 +26,5 @@ section {
     border-radius: 2px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 13px;
-    padding: 2px;
-    
+    padding: 2px;   
 }
