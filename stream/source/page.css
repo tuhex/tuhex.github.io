@@ -5,10 +5,10 @@ body {
 }
 
 section {
-    font-family: "Reddit Mono", monospace;
+    font-family: "Open Sans", monospace;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .protected {
