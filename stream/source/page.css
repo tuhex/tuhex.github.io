@@ -6,10 +6,11 @@ body {
 
 section {
     font-family: "Cantarell", monospace;
-    font-size: 20px;
+    font-size: 17px;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 70px;
+    line-height: 1.8;
 }
 
 .protected {
