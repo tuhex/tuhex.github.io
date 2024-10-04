@@ -1,0 +1,11 @@
+# site settings
+title:
+remote_theme: pages-themes/architect@v0.2.0
+plugins:
+- jekyll-remote-theme #
+email:
+description: >-
+
+domain: tuhex.github.io
+url: https://tuhex.github.io
+baseurl: /docs/
