@@ -1,7 +1,7 @@
 title: tuhex station
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
-
+  game design
 domain: tuhex.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tuhex.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -9,9 +9,9 @@ github_username:
 
 # Build settings
 # theme:
-remote_theme: pages-themes/architect@v0.2.00
+theme: minima
 plugins:
-  - jekyll-remote-theme
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
