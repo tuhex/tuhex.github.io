@@ -2,10 +2,22 @@
 layout: post
 title: tuhex station
 ---
-<html>
-    <head>
-    </head>
-    <body>
-    <a href="https://tuhex.github.io/_posts/2024-10-4-pinkfloyd.html">pink</a>
-    </body>
+<!-- ~/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | escape }}</title>
+  {% include head_custom.html %}
+</head>
+<body>
+  {% include header.html %}
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
+  {% include footer.html %}
+</body>
 </html>
